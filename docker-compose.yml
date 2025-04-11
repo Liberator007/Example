@@ -1,0 +1,88 @@
+
+services:
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    user: root
+    container_name: mssqldb
+    ports:
+      - '1433:1433'
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong123#Password
+    networks:
+      - backend-network
+    volumes:
+      - ./mssql/data:/var/opt/mssql/data
+      - ./mssql/backups:/var/opt/mssql/backups
+      - ./mssql/init.sql:/var/opt/mssql/init.sql
+    #   - ./bash/entrypoint.sh:/docker-entrypoint-initdb.d/entrypoint.sh
+    # command: ["/bin/bash", "/docker-entrypoint-initdb.d/entrypoint.sh"]
+
+  authorservice.api:
+    image: ${DOCKER_REGISTRY-}authorserviceapi
+    build:
+      context: .
+      dockerfile: Services/AuthorService/AuthorService.API/Dockerfile
+    container_name: authorservice.api
+    depends_on:
+      - mssql
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=mssql,1433;Database=Example;User ID=sa;Password=YourStrong123#Password;TrustServerCertificate=True;"
+    networks:
+      - backend-network
+          
+networks:
+  backend-network:
+    driver: bridge
+   
+volumes:
+  mssql-data:
+
+
+
+
+
+# networks:
+#   example-dev:
+#     driver: bridge
+
+# services:
+
+#   mssqldb:
+#     container_name: mssqldb
+#     image: mcr.microsoft.com/mssql/server:2022-latest
+#     environment:
+#       - ACCEPT_EULA=Y
+#       - MSSQL_SA_PASSWORD=YourStrong123#Password
+#       - MSSQL_PID=Developer
+#     ports:
+#       - '1433:1433'
+#     networks:
+#       - example-dev
+#     volumes:
+#       - ./mssql/data:/var/opt/mssql/data
+#       - ./mssql/backups:/var/opt/mssql/backups
+#       - ./mssql/init.sql:/usr/src/init.sql
+
+#   authorservice.api:
+#     image: ${DOCKER_REGISTRY-}authorserviceapi
+#     container_name: authorservice.api
+#     build:
+#       context: .
+#       dockerfile: Services/AuthorService/AuthorService.API/Dockerfile
+#     ports:
+#       - "8080:8080"
+#       - "8081:8081"
+#     networks:
+#       - example-dev
+#     depends_on:
+#       - mssqldb
+#     environment:
+#       - DB_HOST=mssqldb
+#       - DB_NAME=Example
+#       - DB_SA_PASSWORD=YourStrong123#Password
+
+# volumes:
+#   mssql:
+    

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\AuthorService\AuthorService.Domain\AuthorService.Domain.csproj" />
+    <ProjectReference Include="..\PostService.API\PostService.API.csproj" />
+    <ProjectReference Include="..\PostService.Application\PostService.Application.csproj" />
+    <ProjectReference Include="..\PostService.Domain\PostService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

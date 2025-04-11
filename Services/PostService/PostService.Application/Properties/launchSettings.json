@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Post.Application": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
