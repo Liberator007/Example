@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -23,4 +23,8 @@
     <ProjectReference Include="..\AuthorService.Infrastructure\AuthorService.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="AuthorTests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100..." />
+  </ItemGroup>
+  
 </Project>

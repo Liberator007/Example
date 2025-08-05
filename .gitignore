@@ -52,3 +52,26 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.pdb
+*.obj
+*.exe
+*.dll
+*.o
+*.lo
+*.la
+*.so
+*.a
+*.lib
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.log
+[Bb]in/
+[Oo]bj/

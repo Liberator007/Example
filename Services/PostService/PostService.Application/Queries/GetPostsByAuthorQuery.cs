@@ -1,7 +1,5 @@
-﻿using AuthorService.Domain.ValueObjects;
-using MediatR;
+﻿using MediatR;
 using PostService.Application.Dtos;
-using PostService.Domain.ValueObjects;
 
 namespace AuthorService.Application.Queries;
 
