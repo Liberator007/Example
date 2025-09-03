@@ -2,9 +2,10 @@
 
 public interface IPostRepository
 {
-    Task AddAsync(Post post);
+    Task CreateAsync(Post post);
+    Task UpdateAsync(Post post);
+    Task DeleteAsync(PostId id);
     Task<Post?> GetByIdAsync(PostId id);
-    Task<List<Post>> GetAllAsync(Guid AuthorId);
-    //Task UpdateAsync(Post post);
+    Task<List<Post>> GetAllPostsByAuthorAsync(Guid authorId);
     Task SaveChangesAsync();
 }

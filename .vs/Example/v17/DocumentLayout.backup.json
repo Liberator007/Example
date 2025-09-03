@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Study\\Example\\Example\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{805ABD55-5648-4011-8B86-9CEC221B0C7A}|Services\\AuthorService\\AuthorService.API\\AuthorService.API.csproj|d:\\study\\example\\example\\services\\authorservice\\authorservice.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{805ABD55-5648-4011-8B86-9CEC221B0C7A}|Services\\AuthorService\\AuthorService.API\\AuthorService.API.csproj|solutionrelative:services\\authorservice\\authorservice.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{358128EE-0E9E-4009-A5B4-AA54CB316CAF}|Services\\PostService\\PostService.Application\\PostService.Application.csproj|d:\\study\\example\\example\\services\\postservice\\postservice.application\\commands\\createpostcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{358128EE-0E9E-4009-A5B4-AA54CB316CAF}|Services\\PostService\\PostService.Application\\PostService.Application.csproj|solutionrelative:services\\postservice\\postservice.application\\commands\\createpostcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{805ABD55-5648-4011-8B86-9CEC221B0C7A}|Services\\AuthorService\\AuthorService.API\\AuthorService.API.csproj|d:\\study\\example\\example\\services\\authorservice\\authorservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{805ABD55-5648-4011-8B86-9CEC221B0C7A}|Services\\AuthorService\\AuthorService.API\\AuthorService.API.csproj|solutionrelative:services\\authorservice\\authorservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECF28BEE-E7C3-4E0E-BF52-67FFE234DD00}|Tests\\AuthorTest\\AuthorTests.csproj|d:\\study\\example\\example\\tests\\authortest\\authorintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF28BEE-E7C3-4E0E-BF52-67FFE234DD00}|Tests\\AuthorTest\\AuthorTests.csproj|solutionrelative:tests\\authortest\\authorintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{358128EE-0E9E-4009-A5B4-AA54CB316CAF}|Services\\PostService\\PostService.Application\\PostService.Application.csproj|d:\\study\\example\\example\\services\\postservice\\postservice.application\\commands\\createposthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{358128EE-0E9E-4009-A5B4-AA54CB316CAF}|Services\\PostService\\PostService.Application\\PostService.Application.csproj|solutionrelative:services\\postservice\\postservice.application\\commands\\createposthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECF28BEE-E7C3-4E0E-BF52-67FFE234DD00}|Tests\\AuthorTest\\AuthorTests.csproj|d:\\study\\example\\example\\tests\\authortest\\authortests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{ECF28BEE-E7C3-4E0E-BF52-67FFE234DD00}|Tests\\AuthorTest\\AuthorTests.csproj|solutionrelative:tests\\authortest\\authortests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{805ABD55-5648-4011-8B86-9CEC221B0C7A}|Services\\AuthorService\\AuthorService.API\\AuthorService.API.csproj|d:\\study\\example\\example\\services\\authorservice\\authorservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{805ABD55-5648-4011-8B86-9CEC221B0C7A}|Services\\AuthorService\\AuthorService.API\\AuthorService.API.csproj|solutionrelative:services\\authorservice\\authorservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6AD1D96-B170-4ED8-8805-B03D9BBE3C3B}|ApiGateways\\YarpApiGateway\\YarpApiGateway.csproj|d:\\study\\example\\example\\apigateways\\yarpapigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6AD1D96-B170-4ED8-8805-B03D9BBE3C3B}|ApiGateways\\YarpApiGateway\\YarpApiGateway.csproj|solutionrelative:apigateways\\yarpapigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6AD1D96-B170-4ED8-8805-B03D9BBE3C3B}|ApiGateways\\YarpApiGateway\\YarpApiGateway.csproj|d:\\study\\example\\example\\apigateways\\yarpapigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6AD1D96-B170-4ED8-8805-B03D9BBE3C3B}|ApiGateways\\YarpApiGateway\\YarpApiGateway.csproj|solutionrelative:apigateways\\yarpapigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +33,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 180,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 154,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,43 +42,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthorTests.csproj",
-              "DocumentMoniker": "D:\\Study\\Example\\Example\\Tests\\AuthorTest\\AuthorTests.csproj",
-              "RelativeDocumentMoniker": "Tests\\AuthorTest\\AuthorTests.csproj",
-              "ToolTip": "D:\\Study\\Example\\Example\\Tests\\AuthorTest\\AuthorTests.csproj",
-              "RelativeToolTip": "Tests\\AuthorTest\\AuthorTests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-05T18:05:55.781Z",
+              "DocumentIndex": 0,
+              "Title": "CreatePostCommand.cs",
+              "DocumentMoniker": "D:\\Study\\Example\\Example\\Services\\PostService\\PostService.Application\\Commands\\CreatePostCommand.cs",
+              "RelativeDocumentMoniker": "Services\\PostService\\PostService.Application\\Commands\\CreatePostCommand.cs",
+              "ToolTip": "D:\\Study\\Example\\Example\\Services\\PostService\\PostService.Application\\Commands\\CreatePostCommand.cs",
+              "RelativeToolTip": "Services\\PostService\\PostService.Application\\Commands\\CreatePostCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T16:05:54.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthorIntegrationTests.cs",
-              "DocumentMoniker": "D:\\Study\\Example\\Example\\tests\\AuthorTest\\AuthorIntegrationTests.cs",
-              "RelativeDocumentMoniker": "tests\\AuthorTest\\AuthorIntegrationTests.cs",
-              "ToolTip": "D:\\Study\\Example\\Example\\tests\\AuthorTest\\AuthorIntegrationTests.cs",
-              "RelativeToolTip": "tests\\AuthorTest\\AuthorIntegrationTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Title": "CreatePostHandler.cs",
+              "DocumentMoniker": "D:\\Study\\Example\\Example\\Services\\PostService\\PostService.Application\\Commands\\CreatePostHandler.cs",
+              "RelativeDocumentMoniker": "Services\\PostService\\PostService.Application\\Commands\\CreatePostHandler.cs",
+              "ToolTip": "D:\\Study\\Example\\Example\\Services\\PostService\\PostService.Application\\Commands\\CreatePostHandler.cs",
+              "RelativeToolTip": "Services\\PostService\\PostService.Application\\Commands\\CreatePostHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T15:20:46.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T22:04:11.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Study\\Example\\Example\\Services\\AuthorService\\AuthorService.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Services\\AuthorService\\AuthorService.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Study\\Example\\Example\\Services\\AuthorService\\AuthorService.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Services\\AuthorService\\AuthorService.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T16:45:02.35Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Study\\Example\\Example\\ApiGateways\\YarpApiGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiGateways\\YarpApiGateway\\appsettings.json",
+              "ToolTip": "D:\\Study\\Example\\Example\\ApiGateways\\YarpApiGateway\\appsettings.json",
+              "RelativeToolTip": "ApiGateways\\YarpApiGateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-18T15:26:37.726Z"
             },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\Example\\Example\\ApiGateways\\YarpApiGateway\\Program.cs",
+              "RelativeDocumentMoniker": "ApiGateways\\YarpApiGateway\\Program.cs",
+              "ToolTip": "D:\\Study\\Example\\Example\\ApiGateways\\YarpApiGateway\\Program.cs",
+              "RelativeToolTip": "ApiGateways\\YarpApiGateway\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T15:26:06.576Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 206,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -79,10 +103,22 @@
               "RelativeDocumentMoniker": "Services\\AuthorService\\AuthorService.API\\Program.cs",
               "ToolTip": "D:\\Study\\Example\\Example\\Services\\AuthorService\\AuthorService.API\\Program.cs",
               "RelativeToolTip": "Services\\AuthorService\\AuthorService.API\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAswBwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T16:47:23.867Z",
+              "WhenOpened": "2025-08-06T15:23:17.53Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Study\\Example\\Example\\Services\\AuthorService\\AuthorService.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\AuthorService\\AuthorService.API\\appsettings.json",
+              "ToolTip": "D:\\Study\\Example\\Example\\Services\\AuthorService\\AuthorService.API\\appsettings.json",
+              "RelativeToolTip": "Services\\AuthorService\\AuthorService.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-06T13:13:08.933Z"
             }
           ]
         }

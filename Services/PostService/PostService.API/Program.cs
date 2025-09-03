@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using PostService.Domain.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,22 +10,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.TokenValidationParameters = new TokenValidationParameters
+        options.Events = new JwtBearerEvents
         {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+            OnMessageReceived = context =>
+            {
+                // токен обрабатывается только в gateway, тут можно пропустить
+                return Task.CompletedTask;
+            }
         };
     });
 
 // Регистрация сервисов
-builder.Services.AddScoped<IPostRepository, PostRepository>();
-builder.Services.AddScoped<IPasswordHasher, AspNetPasswordHasher>();
-builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IPostRepository, IPostRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
