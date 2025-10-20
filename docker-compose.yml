@@ -1,6 +1,8 @@
+version: '3.9'
 
 services:
 
+  # ---------- MSSQL ----------
   mssql:
     image: mcr.microsoft.com/mssql/server:2022-latest
     user: root
@@ -19,6 +21,8 @@ services:
     #   - ./bash/entrypoint.sh:/docker-entrypoint-initdb.d/entrypoint.sh
     # command: ["/bin/bash", "/docker-entrypoint-initdb.d/entrypoint.sh"]
 
+
+  # ---------- AuthorService ----------
   authorservice.api:
     image: ${DOCKER_REGISTRY-}authorserviceapi
     build:
@@ -29,6 +33,8 @@ services:
       - mssql
     environment:
       ConnectionStrings__DefaultConnection: "Server=mssql,1433;Database=Example;User ID=sa;Password=YourStrong123#Password;TrustServerCertificate=True;"
+    ports:
+      - "5000:8080"
     networks:
       - backend-network
           
@@ -36,8 +42,8 @@ networks:
   backend-network:
     driver: bridge
    
-volumes:
-  mssql-data:
+# volumes:
+#   mssql-data:
 
 
 
