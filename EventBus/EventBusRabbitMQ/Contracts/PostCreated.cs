@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Text.Json;
 
-namespace EventBusRabbitMQ.Models
+namespace EventBus.RabbitMQ.Contracts
 {
     public record PostCreated(Guid Id, string Name);
 }

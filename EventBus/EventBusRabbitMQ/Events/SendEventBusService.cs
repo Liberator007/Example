@@ -4,7 +4,7 @@ using RabbitMQ.Client;
 //using RabbitMQ.Client.Events;
 //using RabbitMQ.Client.Exceptions;
 
-namespace EventBusRabbitMQ
+namespace EventBus.RabbitMQ.Events
 {
     public interface ISendEventBusService
     {
@@ -16,7 +16,7 @@ namespace EventBusRabbitMQ
     {
         public async Task SendMessage<T>(T obj)
         {
-            var message = JsonSerializer.Serialize<T>(obj);
+            var message = JsonSerializer.Serialize(obj);
             await SendMessage(message);
         }
 

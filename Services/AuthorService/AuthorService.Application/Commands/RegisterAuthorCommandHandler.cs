@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using MassTransit;
+using MediatR;
+using EventBus.RabbitMQ.Contracts;
 
 namespace AuthorService.Application.Commands;
 
@@ -31,11 +33,14 @@ public class RegisterAuthorCommandHandler : IRequestHandler<RegisterAuthorComman
 {
     private readonly IAuthorRepository _authorRepository;
     private readonly IPasswordHasher _passwordHasher;
+    private readonly IPublishEndpoint _publishEndpoint;
 
-    public RegisterAuthorCommandHandler(IAuthorRepository authorRepository, IPasswordHasher passwordHasher)
+    public RegisterAuthorCommandHandler(
+        IAuthorRepository authorRepository, IPasswordHasher passwordHasher, IPublishEndpoint publishEndpoint)
     {
         _authorRepository = authorRepository;
         _passwordHasher = passwordHasher;
+        _publishEndpoint = publishEndpoint;
     }
 
     public async Task<AuthorId> Handle(RegisterAuthorCommand command, CancellationToken cancellationToken)
@@ -48,6 +53,12 @@ public class RegisterAuthorCommandHandler : IRequestHandler<RegisterAuthorComman
         );
 
         await _authorRepository.AddAsync(author);
+
+        // Публикуем событие в RabbitMQ
+        await _publishEndpoint.Publish(
+            new AuthorCreated(author.Id.Value, author.Username, author.Email),
+            cancellationToken);
+
         return author.Id;
     }
 }

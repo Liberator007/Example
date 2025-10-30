@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\EventBus\EventBusRabbitMQ\EventBus.RabbitMQ.csproj" />
     <ProjectReference Include="..\AuthorService.Application\AuthorService.Application.csproj" />
     <ProjectReference Include="..\AuthorService.Infrastructure\AuthorService.Infrastructure.csproj" />
   </ItemGroup>

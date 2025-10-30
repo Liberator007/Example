@@ -7,11 +7,11 @@ namespace AuthorService.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AuthController : ControllerBase
+    public class AuthorController : ControllerBase
     {
         private readonly IMediator _mediator;
 
-        public AuthController(IMediator mediator)
+        public AuthorController(IMediator mediator)
         {
             _mediator = mediator;
         }

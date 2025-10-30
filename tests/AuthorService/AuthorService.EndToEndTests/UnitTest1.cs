@@ -1,4 +1,4 @@
-﻿namespace PostTest
+﻿namespace AuthorService.EndToEndTests
 {
     public class UnitTest1
     {

@@ -33,8 +33,41 @@ services:
       - mssql
     environment:
       ConnectionStrings__DefaultConnection: "Server=mssql,1433;Database=Example;User ID=sa;Password=YourStrong123#Password;TrustServerCertificate=True;"
+      # MessageBroker__Host: "rabbitmq://messagebroker"
+      # MessageBroker__UserName: "guest"
+      # MessageBroker__Password: "guest"
+    ports:
+      - "5001:8080"
+    networks:
+      - backend-network
+      
+
+  # ---------- ApiGateway ----------
+  apigateway:
+    build:
+      context: .
+      dockerfile: ApiGateways/YarpApiGateway/Dockerfile
+    container_name: apigateway
     ports:
       - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - authorservice.api
+    networks:
+      - backend-network
+  
+
+  # ---------- MessageBroker ----------
+  messagebroker:
+    image: rabbitmq:3-management-alpine
+    container_name: messagebroker
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
     networks:
       - backend-network
           

@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.5.5" />
     <PackageReference Include="MediatR" Version="13.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\EventBus\EventBusRabbitMQ\EventBus.RabbitMQ.csproj" />
     <ProjectReference Include="..\AuthorService.Domain\AuthorService.Domain.csproj" />
     <ProjectReference Include="..\AuthorService.Infrastructure\AuthorService.Infrastructure.csproj" />
   </ItemGroup>
