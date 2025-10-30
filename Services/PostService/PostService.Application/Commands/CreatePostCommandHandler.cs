@@ -5,12 +5,12 @@ using PostService.Domain.Services;
 using PostService.Domain.ValueObjects;
 
 namespace PostService.Application.Commands;
-public class CreatePostHandler : IRequestHandler<CreatePostCommand, PostDto>
+public class CreatePostCommandHandler : IRequestHandler<CreatePostCommand, PostDto>
 {
     private readonly IPostRepository _postRepository;
     private readonly IPublishEndpoint _publishEndpoint;
 
-    public CreatePostHandler(IPostRepository postRepository, IPublishEndpoint publishEndpoint)
+    public CreatePostCommandHandler(IPostRepository postRepository, IPublishEndpoint publishEndpoint)
     {
         _postRepository = postRepository;
         _publishEndpoint = publishEndpoint;
