@@ -75,3 +75,4 @@ nunit-*.xml
 *.log
 [Bb]in/
 [Oo]bj/
+/.vs/Example/v17/.suo
