@@ -1,10 +1,11 @@
 ﻿using MassTransit;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using PostService.Application.Dtos;
 using PostService.Domain.Services;
 using PostService.Domain.ValueObjects;
 
-namespace PostService.Application.Commands;
+namespace PostService.Application.Commands.Handler;
 public class CreatePostCommandHandler : IRequestHandler<CreatePostCommand, PostDto>
 {
     private readonly IPostRepository _postRepository;

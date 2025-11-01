@@ -17,4 +17,8 @@
     <ProjectReference Include="..\PostService.Domain\PostService.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Queries\Handler\" />
+  </ItemGroup>
+
 </Project>

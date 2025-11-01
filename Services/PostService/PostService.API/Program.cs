@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using PostService.API.Middleware;
 using PostService.Domain.Services;
 using System.Text;
 
@@ -38,8 +39,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
+app.UseMiddleware<UserHeaderMiddleware>();
 app.MapControllers();
 
 app.Run();

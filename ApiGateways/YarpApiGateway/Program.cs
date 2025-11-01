@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Security.Claims;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -78,6 +79,22 @@ if (app.Environment.IsDevelopment())
     //    c.SwaggerEndpoint("https://authorservice.api/swagger/v1/swagger.json", "AuthorService API via Gateway");
     //});
 }
+
+app.Use(async (context, next) =>
+{
+    if (context.User.Identity?.IsAuthenticated == true)
+    {
+        var userId = context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        //var email = context.User.FindFirst(ClaimTypes.Email)?.Value;
+
+        if (!string.IsNullOrEmpty(userId))
+            context.Request.Headers["X-User-Id"] = userId;
+        //if (!string.IsNullOrEmpty(email))
+        //    context.Request.Headers["X-User-Email"] = email;
+    }
+
+    await next();
+});
 
 app.Use(async (context, next) =>
 {

@@ -1,5 +1,6 @@
 ﻿using MassTransit;
 using PostService.Application.Commands;
+using PostService.Application.Commands.Handler;
 using PostService.Domain.Models;
 using PostService.Domain.Services;
 
